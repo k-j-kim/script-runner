@@ -1,0 +1,44 @@
+# Dependencies
+node_modules
+client/node_modules
+
+# Build output
+client/dist
+public
+
+# Database and runtime files
+*.sqlite
+*.sqlite-journal
+scripts/*.js
+!scripts/.gitkeep
+logs/*.log
+!logs/.gitkeep
+
+# Git
+.git
+.gitignore
+
+# Documentation
+*.md
+docs
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+
+# PM2
+ecosystem.config.js
+
+# Test files
+*.test.js
+__tests__

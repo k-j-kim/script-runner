@@ -1,0 +1,11 @@
+node_modules/
+logs/*.log
+scripts/*.js
+!scripts/.gitkeep
+public/
+client/dist/
+client/node_modules/
+*.sqlite
+*.sqlite-journal
+.DS_Store
+.env
