@@ -4,10 +4,10 @@ FROM node:18-slim AS frontend-builder
 WORKDIR /app/client
 
 # Copy client package files
-COPY client/package*.json ./
+COPY client/package.json ./
 
-# Install dependencies
-RUN npm ci
+# Install dependencies (use npm install to resolve platform-specific native bindings)
+RUN npm install
 
 # Copy client source
 COPY client/ ./
